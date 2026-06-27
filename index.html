@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Jassmiineee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <meta property="og:title" content="HALLO JASSMIINEEE">
+    <meta property="og:description" content="Ada sebuah pesan spesial dan tulus yang ingin aku sampaikan kepadamu. Silakan dibuka ya!">
+    <meta property="og:image" content="assets/logo.jpg">
+    <meta property="og:url" content="https://for-jasmine.netlify.app">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+</head>
+<body class="page-index min-h-screen flex flex-col items-center justify-center relative select-none">
+    
+    <div id="heart-container" class="absolute inset-0 pointer-events-none z-0 overflow-hidden"></div>
+
+    <audio id="bg-music" src="assets/audio.mp3" loop autoplay preload="auto"></audio>
+
+    <!-- ========== HERO SECTION ========== -->
+    <div id="hero-section" class="z-10 text-center px-4 flex flex-col items-center justify-center">
+        <h1 class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold animate-wind-loop animate-text-gradient-index tracking-wider mb-6 md:mb-8 drop-shadow-sm leading-tight">
+            HALLO JASSMIINEEE
+        </h1>
+
+        <div class="btn-ripple-wrapper">
+            <button id="btn-open-message" class="btn-pulse bg-white/80 backdrop-blur-sm text-pink-500 font-semibold px-4 py-2.5 sm:px-6 sm:py-3 rounded-full shadow-lg hover:shadow-xl hover:bg-pink-50 hover:scale-105 transition duration-300 flex items-center gap-2 border border-pink-200 cursor-pointer text-sm sm:text-base">
+                <i class="fa-solid fa-envelope-open-text animate-bounce"></i>
+                Pesan Untukmu Dari Ku
+            </button>
+        </div>
+    </div>
+
+    <div id="message-modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500 px-4 py-8">
+        <div class="bg-white/90 backdrop-blur-md p-5 sm:p-6 md:p-8 rounded-2xl shadow-2xl max-w-md w-full border border-pink-100 transform scale-95 transition-transform duration-500 relative max-h-[85vh] overflow-y-auto">
+            
+            <div class="text-center">
+                <i class="fa-solid fa-heart text-pink-400 text-3xl mb-4 animate-pulse"></i>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Hai Jassmiineee...</h2>
+                <div class="text-gray-600 space-y-3 sm:space-y-4 leading-relaxed max-h-48 sm:max-h-60 overflow-y-auto pr-2 text-xs sm:text-sm md:text-base text-left">
+                    <p>Sebenarnya gw buat website ini cuma mau mengungkapkan apa yang selama ini ada di dalam hati gw. Pas pertama kali kita kenal di kelas kampus, gw ngerasa ada sesuatu yang beda dari lo.</p>
+                    <p>Lo itu orangnya baik, seru, dan senyuman lo selalu bisa bikin hari-hari kuliah gw yang melelahkan jadi terasa jauh lebih ringan. Gw bersyukur banget bisa sekelas dan kenal sama lo.</p>
+                    <p>Lewat tulisan digital sederhana ini, gw cuma pengen jujur sama perasaan gw sendiri kalau gw jatuh cinta sama lo, Jasmine. Gw gak nuntut atau maksa lo buat merespons gimana-gimana kok, gw cuma pengen lo tahu hal itu.</p>
+                    <p>Terima kasih ya udah mau jadi salah satu alasan gw semangat ke kampus setiap hari. <i class="fa-solid fa-star text-yellow-400 text-xs"></i></p>
+                </div>
+                
+                <button id="btn-read-done" class="btn-animated-gradient mt-6 w-full hover:opacity-90 text-white font-semibold py-3 rounded-xl shadow-md transition duration-300 flex items-center justify-center gap-2 cursor-pointer">
+                    Aku Udah Bacaa
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">by <i class="fa-solid fa-heart"></i> Thomas</footer>
+
+    <!-- ========== LOVE SECTION (SPA) ========== -->
+    <div id="love-section" class="section-hidden z-10 text-center px-4 min-h-screen flex flex-col items-center justify-center">
+        <div id="stars-container-love" class="absolute inset-0 pointer-events-none z-0 overflow-hidden"></div>
+        <div id="heart-container-love" class="absolute inset-0 pointer-events-none z-0 overflow-hidden"></div>
+
+        <div class="z-10 relative">
+            <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black animate-text-gradient-love tracking-wide drop-shadow-md mb-4 md:mb-6 leading-tight" style="opacity:0;" id="love-heading">
+                I LOVE YOU JASMINE
+            </h1>
+            
+            <p class="text-gray-500 text-sm md:text-base italic" style="opacity:0;" id="love-subtitle">
+                Thank you for being you. <i class="fa-solid fa-heart text-red-400"></i>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
